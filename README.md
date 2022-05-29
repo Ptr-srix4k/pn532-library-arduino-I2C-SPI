@@ -19,12 +19,12 @@ Per usare il PN532 in modalita SPI dovete:
   - Collegare SCK al pin 13 di Arduino
   - Impostare il define "USE_SPI" dello sketch (riga 6 di pn532.ino) a 1
 
-## Opzioni
+# Opzioni
   - È possibile cambiare il pin usato per SS usando il define "PN532_SS" (riga 5 di pn532.ino)
   - La modalità DEBUG (vengono mostrati sulla porta seriale i frame ricevuti/trasmessi) si può abilitare impostando a 1 il define "DEBUG" (riga 4 di PN532_srix4k.h)
   - È possibile aumentare il tempo di attesa della risposta I2C/SPI aumentando il valore del define TIMEOUT (riga 5 di PN532_srix4k.h)
 
-## Problemi
+# Problemi
   - Su alcune board la lettura dei tag SRIX4K è problematica: solo se il tag viene messo in una posizione particolare (**SOTTO** la board, spostato a "destra" come nella foto indicato in blu) si riesce a leggere correttamente. Non è un problema della libreria ma della qualità della board  
   ![](posizione.PNG)
   - Su una board mi è capitato di trovare dei valori sbagliati delle resistenze su SCK/MISO/MOSI/SS (quelle cerchiate in blu nell'immagine sotto). Il loro valore deve essere di 100 Ohm  
