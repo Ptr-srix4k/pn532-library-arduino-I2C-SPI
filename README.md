@@ -25,5 +25,9 @@ Per usare il PN532 in modalita SPI dovete:
   - È possibile aumentare il tempo di attesa della risposta I2C/SPI aumentando il valore del define TIMEOUT (riga 5 di PN532_srix4k.h)
 
 ## Problemi
-  - Su alcune board la lettura dei tag SRIX4K è problematica: solo se il tag viene messo in una posizione particolare (**SOTTO** la board, spostato a "destra" come nella foto indicato in blu) si riesce a leggere correttamente. Non è un problema della libreria ma della qualità della board
-  - Su una board mi è capitato di trovare dei valori sbagliati delle resistenze su SCK/MISO/MOSI/SS (quelle cerchiate in blu nell'immagine sotto). Il loro valore deve essere 100 Ohm
+  - Su alcune board la lettura dei tag SRIX4K è problematica: solo se il tag viene messo in una posizione particolare (**SOTTO** la board, spostato a "destra" come nella foto indicato in blu) si riesce a leggere correttamente. Non è un problema della libreria ma della qualità della board  
+  ![](posizione.PNG)
+  - Su una board mi è capitato di trovare dei valori sbagliati delle resistenze su SCK/MISO/MOSI/SS (quelle cerchiate in blu nell'immagine sotto). Il loro valore deve essere di 100 Ohm  
+  ![](resistenze.jpg)
+
+
